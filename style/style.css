@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+nav{
+    height:70vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5vh;
+}
+#intro{
+position: absolute;
+width: 50vw;
+left: 25vw;
+height: 22vw;
+bottom: 5%;
+background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);background-blend-mode: multiply;
+border-radius: 20%;
+filter: drop-shadow(2vw 2vw 2vw #111);
+}
+#service_nav{
+    background:rgb(190, 190, 190) ;
+    display: flex ;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+#service_nav a{
+    text-decoration: none;
+    color:black;
+    font-family: sans-serif;
+}
+#service_nav a:hover{
+    color: darkred;
+}
+#service_nav a:active{
+    color: black;
+}
+#page_nav{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+#page_nav a{
+    text-decoration: none;
+}
+#third_pn a{
+    color:green;
+    font-family:sans-serif;
+    font-size: 3vw;
+}
+#seconde_pn a{
+    color:orange;
+    font-family:cursive ;
+    font-size: 3vw;
+}
+#first_pn a{
+color:red;
+font-family:fantasy;
+font-size: 4vw;
+}
+#page_nav a:hover{
+color: darkred;
+}
+#page_nav a:active{
+color: black ;
+}
+#container_pros{
+width: 100%;
+height: 50vh;
+display: flex;
+}
+#container_pros div{
+margin: 1%;
+width: 100%;
+height: 60%;
+}
+#main_hover:hover{
+transform: scale(1.05);
+transition: 1s;
+}
+.hover_text{
+    width: 100%;
+position: absolute;
+top: 20%;
+font-size: 2vh;
+background-color: whitesmoke;
+opacity: .2;
+    
+}
+.hover_text:hover{
+transition: .5s;
+opacity: .8;    
+}
+#main_hover img{
+width: 100%;
+height: 100%;
+border-radius: 10%;
+}
+#seconde_container{
+width: 100%;
+display: grid;
+grid-template-columns:0.1fr repeat(2,0.8fr);
+grid-template-rows: repeat(4,1fr);
+grid-gap: 10px;
+row-gap: 10px;
+}
+#imagemain{
+width: 70%;
+height: 100%;
+grid-column: 3/4;
+grid-row: 1/4;
+box-shadow: 5vw 5vw 10vw black;
+position: relative;
+}
+#container_slideshow{
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+overflow:hidden;
+z-index: -1;
+box-shadow: -11vh -8vh 20vh white ;
+border-radius: 5%;
+}
+#container_slideshow div{
+animation: slide 24s alternate infinite;
+animation-delay:6s;
+}
+#qoutes_slideshow{
+width: 100%;
+height: 100%;
+}
+#first_slide{
+width: 100%;
+height: 100%;
+flex-shrink: 0;
+z-index: -1;
+}
+#seconde_slide{
+width: 100%;
+height: 100%;
+flex-shrink: 0;
+z-index: -1;
+}
+#third_slide{
+width: 100%;
+height: 100%;
+flex-shrink: 0;
+z-index: -1;
+}
+#four_slide{
+width: 100%;
+height: 100%;
+flex-shrink: 0;
+z-index: -1;
+}
+#five_slide{
+width: 100%;
+height: 100%;
+flex-shrink: 0;
+z-index: -1;
+}
+@keyframes slide {
+0%{transform: translate(0%);}
+10%{transform: translate(100%);}
+25%{transform: translatex(100%);}
+45%{transform: translatex(200%);}
+55%{transform: translatex(200%)}
+70%{transform: translatex(300%);}
+85%{transform: translatex(300%);}
+100%{transform: translatex(400%)}
+}
+#slide_text{
+color:turquoise;
+margin-top: 10%;
+grid-column: 3/4;
+grid-row: 4/5;
+}
+.left_seconde{
+margin-left: 20%;
+width: 70%;
+height: 100%;
+font-family: sans-serif;
+direction: ltr;
+text-shadow: 2vh 3vw .4vh white;
+font-size: large;
+}
+#b_seconde{grid-column: 2/3;grid-row:2/3;}
+#c_seconde{ grid-column: 2/3; grid-row: 3/4;}
+#a_seconde{grid-column: 2/3;grid-row: 1/2;}
+#main_hover{
+position: relative;    
+}
+@media only screen and (min-width:100px) and (max-width:753px){
+    body{background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);}
+    nav{
+        height: 40vh;
+    }
+    #intro{
+        height: 60%;
+        width: 70%;
+        left: 15%;
+    }
+    #container_pros{
+        flex-wrap: wrap;
+        margin-bottom: 100vh;
+    }
+    #container_pros div{
+        width: 80%;
+        flex-shrink: 0;
+    }
+    #main_hover:hover{
+        transform: scale(1);
+        }
+    .hover_text{
+        position: absolute;
+        bottom: 20%;
+        font-size: 4vw;
+        opacity: .7;
+        font-size:large;
+        }
+        .left_seconde{
+            text-shadow: none;
+            }
+        
+        #slide_text{
+            color: goldenrod;
+            margin-top: 10%;
+            grid-column: 3/4;
+            grid-row: 2/4;    
+        }
+        #imagemain{
+            width: 70%;
+            height: 100%;
+            grid-column: 3/5;
+            grid-row: 1/2;
+            box-shadow: 5vw 5vw 10vw black;
+            position: relative;
+            }
+}
