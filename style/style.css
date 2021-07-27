@@ -221,9 +221,10 @@ position: relative;
         }
     .hover_text{
         position: absolute;
-        bottom: 20%;
+        bottom:0;
+        top: 0;
         font-size: 4vw;
-        opacity: .7;
+        opacity: .5;
         font-size:large;
         }
         .left_seconde{
