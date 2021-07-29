@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#LOGO{
+    background:black;
+    position: absolute;
+    width: 5vw;
+    height: 10vw;
+    /* padding:.5vw; */
+    border-bottom-left-radius: 20%;
+}
+#LOGO:hover{
+    filter: brightness(150%);
+}
+#service_nav{
+    background:black ;
+    display: flex ;
+    height: 5vw;
+    justify-content: space-around;
+    list-style-type: none;
+  
+}
+#service_nav a{
+    text-decoration: none;
+    color:white;
+    font-weight: 900;
+    font-family: sans;
+    font-size:4vw;;
+}
+#service_nav a:hover{
+    color: darkred;
+}
+#service_nav a:active{
+    color: black;
+}
+#container_slideshow{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow:hidden;
+    z-index: -1;
+    box-shadow: -11vh -8vh 20vh white ;
+    filter:brightness(0.5);
+        }
+    #container_slideshow div{
+    animation: slide 15s alternate infinite;
+    animation-delay:2s;
+    }
+    #qoutes_slideshow{
+    width: 100%;
+    height: 100%;
+    }
+    #first_slide{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    z-index: -1;
+    }
+    #seconde_slide{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    z-index: -1;
+    }
+    #third_slide{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    z-index: -1;
+    }
+    #four_slide{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    z-index: -1;
+    }
+    #five_slide{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    z-index: -1;
+    }
+    #newsletter{
+        color: yellow;
+        border: red 1px solid;
+        box-shadow: 1vw 1vw 1vw white;
+    }
+   
+    @keyframes slide {
+        0%{transform: translate(0%);}
+        10%{transform: translate(100%);}
+        25%{transform: translatex(100%);}
+        45%{transform: translatex(200%);}
+        55%{transform: translatex(200%)}
+        70%{transform: translatex(300%);}
+        85%{transform: translatex(300%);}
+        100%{transform: translatex(400%)}
+        }
+        #slide_text{
+            margin-top:10%;
+            color: white;
+            font-family: sans-serif;
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        #slide_text_a{
+            box-shadow: 1vw 1vw 5vw white;
+            border-radius: 10%;
+            background: rgb(153, 255, 0);
+            font-family: sans-serif;
+            font-size: xx-large;
+            font-weight: 900;
+            margin-right: 40%;
+            color: red;
+            text-decoration: none;
+        }
+        main{
+
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        }
+        #me{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            direction: ltr;
+
+        }
+        .title{
+            flex-shrink: 0;
+            color: red;
+            text-align: center;
+
+        }
+        #text1 {
+            width: 100%;
+        }
+        h4{
+            color: seashell;
+        }
+        #me img{
+            width: 100%;
+        }
+        @media screen and (max-width:800px ) {
+            #LOGO{
+                left: 30%;
+                top: 20%;
+                border-radius: 20%;
+                width: 10vw;
+                animation: LOGO 1.5s linear alternate infinite ;
+            }
+            @keyframes LOGO {
+                0%{}
+                100%{transform: scale(1.5);box-shadow: 1vw 1vw 1vw red;}
+            }
+            header{
+                height: 40vh;
+            }
+            #slide_text{
+                margin-top: 0;
+            font-size: 2vw;
+
+            }
+            #slide_text_a{
+                margin-top: 0;
+                font-size: 2vw;
+    
+                }
+        }
+        @media screen and (max-width:500px ) {
+            #LOGO{
+                left: 45%;
+                top: 60%;
+                border-radius: 20%;
+                width: 10vw;
+                animation: LOGO 1.5s linear alternate infinite ;
+            }
+            @keyframes LOGO {
+                0%{}
+                100%{transform: scale(1.5);box-shadow: 1vw 1vw 1vw red;}
+            }
+            header{
+                height: 40vh;
+            }
+            #slide_text{
+            font-size: 3vw;
+
+            }
+            #slide_text_a{
+                font-size: 3vw;
+    
+                }
+        }

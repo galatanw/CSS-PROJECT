@@ -13,6 +13,13 @@ nav{
     position: relative;
     margin-bottom: 5vh;
 }
+
+#home_Screen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+}
 #intro{
 position: absolute;
 width: 50vw;
@@ -28,7 +35,7 @@ filter: drop-shadow(2vw 2vw 2vw #111);
     display: flex ;
     justify-content: space-around;
     list-style-type: none;
-
+  
 }
 #service_nav a{
     text-decoration: none;
@@ -198,7 +205,60 @@ font-size: large;
 #main_hover{
 position: relative;    
 }
-@media all and (min-width:100px) and (max-width:800px){
+footer{
+    margin-top: 20vh;
+}
+#register{
+    display: flex;
+    width:100%;
+    height: 10%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    
+}
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 30vh;
+    
+}
+
+#content{
+    flex-shrink: 0;
+    width: 40%;
+    height: 50%;
+    margin-right: 20%;
+}
+#content_img {
+    width:80%;
+}
+#CONTACT_US{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid blue;
+    background-color: #fff0;
+    height: 20%;
+    flex-shrink: 0;
+    width: 40%;
+    
+}
+textarea{
+    background-color: #fff0;
+    border: none;
+    border-bottom: 1px solid blue;
+    height:30%;
+}
+#newsletter{
+    padding: 3%;
+    color: yellow;
+    box-shadow: 1vw 1vw 1vw white;
+}
+
+@media all and (min-width:100px) and (max-width:900px){
     body{background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);}
     nav{
         height: 40vh;
@@ -209,6 +269,7 @@ position: relative;
         left: 15%;
     }
     #container_pros{
+        justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 100vh;
     }
@@ -219,13 +280,8 @@ position: relative;
     #main_hover:hover{
         transform: scale(1);
         }
-    .hover_text{
-        position: absolute;
-        bottom:0;
-        top: 0;
-        font-size: 4vw;
-        opacity: .5;
-        font-size:large;
+        #seconde_container{
+            height: 100vh;
         }
         .left_seconde{
             text-shadow: none;

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-image: url(/images/nav_bg.jpg);
+    background-size: contain;
+    position: relative;
+
+}
+
+#LOGO{
+    background:black;
+    position: absolute;
+    width: 5vw;
+    height: 10vw;
+    border-bottom-left-radius: 20%;
+}
+#LOGO:hover{
+    filter: brightness(150%);
+}
+#service_nav{
+    background:black ;
+    display: flex ;
+    height: 5vw;
+    justify-content: space-around;
+    list-style-type: none;
+  
+}
+#service_nav a{
+    text-decoration: none;
+    color:white;
+    font-weight: 900;
+    font-family: sans;
+    font-size:4vw;;
+}
+#service_nav a:hover{
+    color: darkred;
+}
+#service_nav a:active{
+    color: black;
+}
+#nav_text{
+    color: darkred;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    font-size: xx-large;
+    font-weight: 900;
+    padding: 5%;
+    /* background-color: darkturquoise; */
+    text-shadow: 10px 10px 3px white  ;
+}
+main{
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    text-align: center;
+}
+
+input[type=text]{
+    box-shadow: 1px 1px 5px honeydew;
+    background-color: #fff1;
+    border:none;
+    border-bottom: 3px solid red;
+}
+textarea{
+    background-color:#fff1;
+}
+::-webkit-input-placeholder{
+    color:white;
+}
+#register{
+    display: flex;
+    width:100%;
+    height: 10%;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 30vh;
+    
+}
+
+#content{
+    flex-shrink: 0;
+    width: 40%;
+    height: 50%;
+    margin-right: 20%;
+}
+#content_img {
+    width:80%;
+}
+#CONTACT_US{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+#newsletter{
+    padding: 3%;
+    color: yellow;
+    box-shadow: 1vw 1vw 1vw white;
+}
+@media screen and (max-width:800px ) {
+    #LOGO{
+        left: 30%;
+        top: 20%;
+        border-radius: 20%;
+        width: 10vw;
+        animation: LOGO 1.5s linear alternate infinite ;
+    }
+    @keyframes LOGO {
+        0%{}
+        100%{transform: scale(1.5);box-shadow: 1vw 1vw 1vw red;}
+    }
+
+    nav{
+        height: 40vh;
+    }
+}
