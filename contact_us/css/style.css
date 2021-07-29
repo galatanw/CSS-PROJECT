@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +15,7 @@ nav{
 }
 
 #LOGO{
+    left: 0;
     background:black;
     position: absolute;
     width: 5vw;
@@ -50,13 +51,12 @@ nav{
     position: absolute;
     top: 50%;
     right: 40%;
-    font-size: xx-large;
+    font-size: 4vw;
     font-weight: 900;
     padding: 5%;
-    /* background-color: darkturquoise; */
     text-shadow: 10px 10px 3px white  ;
 }
-main{
+body{
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     text-align: center;
 }
@@ -77,7 +77,6 @@ textarea{
     display: flex;
     width:100%;
     height: 10%;
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 #wrapper{
     display: flex;

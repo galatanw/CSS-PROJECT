@@ -127,13 +127,20 @@ h1{
     font-size: 5vw;
     font-weight: bolder;
 }
+#why_us:hover{
+    filter: brightness(200);
+}
 #newsletter{
-    color: yellow;
-    box-shadow: -4vw 1vw 4vw yellow;
-    
-    width: 40vw;
+    color: black;
+    font-weight: bolder;
+    box-shadow: -4vw 1vw 4vw white;
+    text-align: center;
+    width: 100%;
 }
 @media screen and (max-width:770px) {
+    body{
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    }
     nav{
         height: 60vh;
     }
@@ -152,9 +159,8 @@ h1{
         width: 40%;
     }
     #newsletter{
-        color: yellow;
-        box-shadow: -4vw 1vw 4vw yellow;
-        width: 60%;
+        text-align: center;
+        width: 100%;
     }
     #payment{
         height: 60vh;
