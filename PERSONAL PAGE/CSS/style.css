@@ -90,9 +90,11 @@ header{
     z-index: -1;
     }
     #newsletter{
-        color: yellow;
-        border: red 1px solid;
-        box-shadow: 1vw 1vw 1vw white;
+        color: black;
+        font-weight: bolder;
+        box-shadow: -4vw 1vw 4vw white;
+        text-align: center;
+        width: 100%;
     }
    
     @keyframes slide {
@@ -143,7 +145,7 @@ header{
         #text1 {
             width: 100%;
         }
-        h4{
+        #me h4{
             color: seashell;
         }
         #me img{
@@ -167,12 +169,10 @@ header{
             #slide_text{
                 margin-top: 0;
             font-size: 2vw;
-
             }
             #slide_text_a{
                 margin-top: 0;
                 font-size: 2vw;
-    
                 }
         }
         @media screen and (max-width:500px ) {
